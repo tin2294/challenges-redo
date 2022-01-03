@@ -24,12 +24,12 @@ class Cookbook
   end
 
   def add_recipe(recipe)
-    @recipes << user_recipe
+    @recipes << recipe
     save
   end
 
   def remove_recipe(recipe_index)
-    @recipes.delete_at(user_index)
+    @recipes.delete_at(recipe_index)
     save
   end
 end
